@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body{
+  margin:auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-screen{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100vh - 35px);
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.tradingview-widget-container{
+  height:100% !important;
+}
+
+.chart-full-screen{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.full-screen-btn,
+.close-screen-btn{ 
+  margin: 4px 0;
+}
+
+.group-btn{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 15%;
+  right: 10%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.top-bar{
+  display: flex;
+  padding: 8px;
+  background-color: rgb(39, 38, 38);
+  color: #fff;
+}
+
+.label{
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(39, 38, 38);
+  z-index: 9;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.main-screen{
+  background-color: #363843;
 }
